@@ -1,0 +1,20 @@
+# Игнорируем всё, кроме JS/JSX файлов в src
+*
+!src/
+src/**/*.css
+src/**/*.html
+src/**/*.json
+!src/**/*.js
+!src/**/*.jsx
+
+# Специфичные файлы и папки
+node_modules
+dist
+public
+.husky
+.prettierrc
+*.json
+*.html
+*.css
+.eslintignore
+.gitignore
