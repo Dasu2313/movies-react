@@ -4,7 +4,7 @@ import Card from './components/Card'
 import CardImage from './components/CardImage'
 import CardInfo from './components/CardInfo'
 import Container from './components/Container'
-import { format } from 'date-fns' // Убрали parseISO
+import { format } from 'date-fns'
 import { Alert, Pagination, Rate, Spin } from 'antd'
 import { debounce } from 'lodash'
 import { useGenres } from './components/GenreContext'

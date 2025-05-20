@@ -22,10 +22,10 @@ const fetchRated = async (sessionId) => {
     }
 
     const data = await response.json()
-    return data.results || [] // Возвращаем только массив результатов
+    return data.results || []
   } catch (e) {
     console.error('Failed to fetch rated movies:', e)
-    return [] // В случае ошибки возвращаем пустой массив
+    return []
   }
 }
 export const RateContextProvider = ({ children }) => {
