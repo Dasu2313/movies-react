@@ -274,7 +274,7 @@ body {
   .cardStars {
     font-size: 12px;
     white-space: nowrap;
-    margin-bottom: 2;
+    margin-bottom: 0;
   }
 
   .cardRatingStars {
