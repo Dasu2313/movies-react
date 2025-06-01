@@ -3,7 +3,7 @@
 .container {
   width: 100%;
   box-sizing: border-box;
-  max-width: 1010px;
+  max-width: 1100px;
   padding: 0 15px;
   margin: 16px auto;
   display: flex;
@@ -64,6 +64,32 @@ body {
   background: #fafafa;
   border: 1px solid #d9d9d9;
   border-radius: 2px;
+}
+
+.cardRatingStars {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 6px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.cardStars {
+  font-size: 14px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.cardStars .ant-rate {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  gap: 2px;
+}
+
+.cardStars .ant-rate-star {
+  margin: 0;
+  flex-shrink: 0;
 }
 
 .cardTag:hover {
@@ -196,4 +222,77 @@ body {
   margin-bottom: 16px;
   flex-wrap: nowrap;
   gap: 1px;
+}
+
+@media (max-width: 425px) {
+  .container {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .card {
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .cardInfo {
+    padding: 12px;
+  }
+
+  .cardImage {
+    width: 60px;
+    height: 91px;
+    margin: 12px;
+    flex-shrink: 0;
+  }
+
+  .cardTitle {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .card-description {
+    font-size: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-left: 0;
+  }
+
+  .cardRating {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  .cardRatingStars {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .cardStars {
+    font-size: 12px;
+    white-space: nowrap;
+    margin-bottom: 0;
+  }
+
+  .cardRatingStars {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .cardContainer {
+    display: flex;
+    gap: 20px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .cardImg {
+    width: 70px;
+    height: 160px;
+    top: 6px;
+    left: 10px;
+  }
 }
