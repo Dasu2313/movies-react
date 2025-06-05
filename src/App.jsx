@@ -195,7 +195,7 @@ const App = () => {
                       }}
                       count={10}
                       className="cardStars"
-                      style={{ fontSize: '15px' }}
+                      style={{ fontSize: '14px', display: 'flex', flexWrap: 'wrap' }}
                     ></Rate>
                   )}
                   {/* <img className="cardStars" src='/image1.png'/> */}
